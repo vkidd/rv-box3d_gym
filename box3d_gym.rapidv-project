@@ -1,0 +1,19 @@
+{
+	"file_ver": 1,
+	"name": "Box3d Gym",
+	"description": "Fun with Box3d",
+	"type": "App",
+	"tools": [
+
+	],
+	"version": "0.1",
+	"vendors": [
+		{
+			"name": "RapidV",
+			"dir_name": "rapidv",
+			"git_url": "https://github.com/vkidd/rapidv.git",
+			"branch": "main",
+			"sha": "5c0d829a8cb467eb0544e9fd41e25b9dbc8a6d55"
+		}
+	]
+}

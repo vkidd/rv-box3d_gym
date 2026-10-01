@@ -1,0 +1,73 @@
+
+# - RapidV -----------------
+
+# Tool Binaries (compiled locally)
+tools/*
+!tools/*.odin
+
+# Build Artifacts
+build/*
+build_vscode/*
+builds/*
+_build/*
+_builds/*
+
+# Vendors (up to you to choose)
+vendor/rapidv/*
+
+# - Misc -------------------
+
+# CLion
+*CodeCompletionFolders.txt
+*CodeLitePreProcessor.txt
+*.workspace
+.idea/
+
+# Compiled object and executables
+*.lo
+*.o
+*.obj
+*.slo
+*.exe
+
+# Compiled dynamic libraries
+*.dll
+*.dSYM
+*.dylib
+*.so
+*/__pycache__/*
+
+# ImGui
+imgui.ini
+
+# Odin
+ols.json
+
+# OSX
+*.DS_Store
+*.pbxuser
+profile
+
+# Sublime Text files
+*.sublime-workspace
+
+# Visual Studio user files
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.VC.db
+*.VC.opendb
+
+# VSCode user files
+*.code-workspace
+*.cache
+.vscode/c_cpp_properties.json
+
+# Windows
+ehthumbs.db
+Thumbs.db
+
+# Xcode
+*.xcworkspace

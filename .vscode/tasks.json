@@ -1,0 +1,36 @@
+
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build Gym",
+			"type": "shell",
+			"command": "vendor/rapidv/tools/WS -setup && odin build program_main.odin -file -out:build/gym -debug",
+			"windows": { "command": "vendor/rapidv/tools/WS.exe -setup; odin build program_main.odin -file -out:build/gym.exe" },
+			"options": { "cwd": "${workspaceFolder}" },
+			"group": { "kind": "build", "isDefault": false }
+		},
+		{
+			"label": "Setup Workspace",
+			"type": "shell",
+			"command": "vendor/rapidv/tools/WS -setup",
+			"options": { "cwd": "${workspaceFolder}" },
+			"group": {
+				 "kind": "build",
+				 "isDefault": false
+			}
+		},
+		{
+			"label": "Clean Workspace",
+			"type": "shell",
+			"command": "vendor/rapidv/tools/WS -clean",
+			"options": { "cwd": "${workspaceFolder}" },
+			"group": {
+				 "kind": "build",
+				 "isDefault": false
+			}
+		}
+	]
+}
+
